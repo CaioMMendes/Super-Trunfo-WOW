@@ -1,0 +1,273 @@
+body {
+    font-family: 'Roboto Mono', monospace;
+    /* min-height: 854px; */
+    background-image: url('https://pm1.narvii.com/6793/7e7daaa5bc2f7037d24c904a45afad6ef0659607v2_hq.jpg');
+    background-color: #000000;
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    padding-bottom: 20vh;
+}
+
+
+
+
+.opcoes {
+    color: white;
+}
+
+table {
+  border: 2px solid white;
+  border-collapse: collapse;
+}
+
+h1 {
+  color: black;
+}
+
+th,
+tr,
+td {
+  border: solid 1px white;
+  color: white;
+}
+tbody{
+    text-align: center;
+}
+.resultadoRodada{
+    color: #ffffff;
+    font-size: 22px;
+
+}
+.resultadofinal{
+    color: white;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: bolder;
+    padding: 1rem;
+    /* border: 2px solid black; */
+    /* background-color: black; */
+    
+}
+
+
+
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+.page-title {
+    color: #ffffff;
+    margin: 5px 0;
+}
+
+#button-jogar {
+    height: 100px;
+    /* padding: .8rem 1.5rem;
+    margin: 1rem 0; */
+    /* border-radius: 5px;
+    border: none;
+    font-size: 1rem; */
+}
+button{
+       padding: .8rem 1.5rem;
+    margin: 1rem 0;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem; 
+}
+h2 {
+    color: white;
+}
+
+#carta-jogador, #carta-maquina {
+    width: 360px;
+    height: 500px;
+    overflow: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    background-size: 350px 300px;
+    background-repeat: no-repeat;
+    background-position-x: 5px;
+    background-position-y: 10px;
+    border-radius: 33px;
+}
+
+#carta-jogador h3 {
+    text-align: center;
+}
+
+.carta-imagem {
+    border: 1px solid black;
+    height: 100px;
+    margin: 10px;
+}
+
+.carta-imagem img {
+    width: 100%;
+    height: 100%;
+}
+
+.carta-status {
+    height: 160px;
+    margin: 2rem;
+    color: white;
+    z-index: 2;
+}
+
+.carta-status input {
+    margin: 7px 10px;
+}
+
+
+
+
+.--spacing {
+    margin-left: 2.5rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.carta-subtitle {
+    z-index: 2;
+    position: absolute;
+    top: 16px;
+    left: 37px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+#cartas {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+
+.tempo{
+    color: white;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: bolder;
+    padding: 1rem;
+    /* border: 2px solid black; */
+    /* background-color: black; */
+    
+}
+
+.restantesJogador{
+        /* width: 15%; */
+    /* height: 25%;
+
+    width: 360px;
+    height: 500px;
+    overflow: auto; */
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin: 0 auto;
+    display: inline-block;
+    align-items: flex-end;
+    position: relative;
+    background-size: 350px 300px;
+    background-repeat: no-repeat;
+    background-position-x: 5px;
+    background-position-y: 10px;
+       
+
+
+}
+.restantesPc{
+    
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin: 0 auto;
+    display: inline-block;
+   
+    position: relative;
+    background-size: 350px 300px;
+    background-repeat: no-repeat;
+    background-position-x: 5px;
+    background-position-y: 10px;
+    margin-right: 750px;
+z-index: 9;
+
+}
+.estiloVerso{
+    color: #ffffff;
+    font-size: 25px;
+           position: absolute;
+        z-index: 999;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        top:30%; /* Adjust this value to move the positioned div up and down */
+        text-align: center;
+        width: 80%; /* Set the width of the positioned div */
+}
+
+.container2 {
+
+
+  position: relative;
+  margin: 30px;
+}
+.escritoCartasRestantes{
+        color: #ffffff;
+    font-size: 16px;
+           position: absolute;
+        z-index: 998;
+        margin: 0 auto;
+        left: -160%;
+        right: 0;
+        top:-40%; /* Adjust this value to move the positioned div up and down */
+        text-align: left;
+        width: 600%; /* Set the width of the positioned div */
+
+}
+
+
+.statusCarta {
+        display: block; /* makes it have a width */
+            content: ""; /* clears default height */
+            margin-top: 0px; /* change this to whatever height you want it */
+}
+
+
+
+
+
+.carta-status  {
+    display:inline-block;
+    text-align: left;
+
+   clear:both;
+    box-sizing:border-box; 
+    height:-70%; 
+    width:-30%;
+}
+
+.escritoStatus {
+    z-index: 2;
+    position: absolute;
+    top: 16px;
+    left: 37px;
+    font-weight: 800;
+    text-transform: uppercase;
+}

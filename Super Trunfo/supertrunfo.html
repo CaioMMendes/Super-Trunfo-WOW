@@ -1,0 +1,107 @@
+<html>
+
+<head>
+    <title>
+        Super Trunfo WoW
+    </title>
+
+
+</head>
+
+
+
+
+
+<link rel="icon" type="image/x-icon" href="favicon.png">
+<link href="supertrunfo.css" rel="stylesheet">
+<script type="text/javascript" src="supertrunfo.js" defer></script>
+
+<body>
+    <div class="container">
+
+
+        <h1 class="page-title">Super Trunfo WoW</h1>
+
+        <button onclick="sortearCarta()" style="cursor:pointer" id="botãoSortear">Sortear Cartas</button>
+        <table style="width:14%">
+            <thead>
+                <tr>
+                    <th colspan="2">Vitórias</th>
+                </tr>
+                <th>Jogador</th>
+                <th>Computador</th>
+                </tr>
+            </thead>
+
+            <tbody id="tabelaVitorias">
+
+            </tbody>
+
+        </table>
+
+
+        <button type="submit" id="reiniciarTudo" class="botaoNovoJogo" style="cursor:pointer" onclick="reiniciar()">Novo
+            Jogo</button><br>
+        <div class="container2">
+            <div id="numeroCartasRestantesJogador" class="restantesPc">
+
+            </div>
+            <div id="numeroCartasRestantesPc" class="restantesJogador"> </div>
+        </div>
+        <form id="form">
+
+
+
+
+
+
+            <h2>Escolha o seu atributo</h2>
+
+
+            <div class="wrapper">
+                <div>
+                    <div id="carta-jogador">
+                        <!-- <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/card-super-trunfo-transparent-ajustado.png"
+                            style=" width: inherit; height: inherit; position: absolute;"> -->
+                        <h3></h3>
+                    </div>
+                </div>
+                <div>
+                    <div id="carta-maquina" class="carta">
+                        <!-- <img
+                            src="https://www.alura.com.br/assets/img/imersoes/dev-2021/card-super-trunfo-transparent-ajustado.png"
+                            style=" width: inherit; height: inherit; position: absolute;"> -->
+                    </div>
+                </div>
+            </div><br><br>
+
+
+            <!-- <div class="opcoes" id="opcoes"></div> -->
+            <button type="button" name="button-jogar" id="btnJogar" style="display:none; cursor:pointer"
+                onclick="jogar()" width="5%">Jogar</button><br>
+
+            <div class="resultadoRodada" id="resultado"></div>
+            <div class="resultadoFinal" id="resultadoFinalJogo"></div>
+            <div class="resultadoRodada" id="statusMaquina"></div>
+            <div class="tempo" id="tempo"></div>
+            <!-- <div class="button" id="botaoParar"></div> -->
+            <button onclick="myStop()" id="botaoParar" style="display:none; cursor:pointer">Stop the
+                time</button>
+            <button onclick="Continue()" style="display: none">Continue</button>
+        </form>
+    </div>
+    <script type="text/javascript">
+        //Faz o botão sumir após clicado
+        var btnReiniciar = document.getElementById('reiniciarTudo');
+        btnReiniciar.style.display = 'none';
+        var btn = document.getElementById('botãoSortear');
+
+        btn.addEventListener('click', () => {
+            // 👇️ hide button
+            btn.style.display = 'none';
+            btnReiniciar.style.display = 'inline';
+        })
+    </script>
+</body>
+
+</html>
